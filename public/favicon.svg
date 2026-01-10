@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with clip corner effect -->
+  <path d="M0 0 L64 0 L64 56 L56 64 L0 64 Z" fill="#2A2A2A"/>
+
+  <!-- Accent corner -->
+  <path d="M56 64 L64 56 L64 64 Z" fill="#D97757"/>
+
+  <!-- I letter -->
+  <rect x="16" y="16" width="6" height="32" fill="#F5F1E8"/>
+
+  <!-- V letter -->
+  <path d="M30 16 L37 48 L44 48 L51 16 L45 16 L40.5 39 L36 16 Z" fill="#F5F1E8"/>
+
+  <!-- Accent line -->
+  <rect x="16" y="50" width="35" height="2" fill="#00CFC1"/>
+</svg>
