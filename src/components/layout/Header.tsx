@@ -1,42 +1,45 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from '../ui/ThemeToggle';
 import { LanguageSelector } from '../ui/LanguageSelector';
-import { motion, AnimatePresence } from 'framer-motion';
 
-export const Header = () => {
+interface NavItem {
+  key: string;
+  href: string;
+}
+
+const navItems: NavItem[] = [
+  { key: 'about', href: '#about' },
+  { key: 'experience', href: '#experience' },
+  { key: 'education', href: '#education' },
+  { key: 'projects', href: '#projects' },
+  { key: 'skills', href: '#skills' },
+  { key: 'contact', href: '#contact' },
+];
+
+export function Header(): JSX.Element {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
 
-  const navItems = [
-    { key: 'about', href: '#about' },
-    { key: 'experience', href: '#experience' },
-    { key: 'education', href: '#education' },
-    { key: 'projects', href: '#projects' },
-    { key: 'skills', href: '#skills' },
-    { key: 'contact', href: '#contact' },
-  ];
-
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll(): void {
       setIsScrolled(window.scrollY > 50);
 
-      // Update active section based on scroll position
-      const sections = navItems.map(item => item.key);
-      for (const section of sections) {
-        const element = document.getElementById(section);
+      for (const { key } of navItems) {
+        const element = document.getElementById(key);
         if (element) {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
+            setActiveSection(key);
             break;
           }
         }
       }
-    };
+    }
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -132,4 +135,4 @@ export const Header = () => {
       </nav>
     </header>
   );
-};
+}

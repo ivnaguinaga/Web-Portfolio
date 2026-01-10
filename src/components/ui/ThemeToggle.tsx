@@ -1,9 +1,12 @@
 import { Moon, Sun } from 'lucide-react';
-import { useTheme } from '../../hooks/useTheme';
 import { motion } from 'framer-motion';
+import { useTheme } from '../../hooks/useTheme';
 
-export const ThemeToggle = () => {
+const springTransition = { type: 'spring', stiffness: 200, damping: 20 } as const;
+
+export function ThemeToggle(): JSX.Element {
   const { theme, toggleTheme } = useTheme();
+  const isDark = theme === 'dark';
 
   return (
     <button
@@ -14,12 +17,8 @@ export const ThemeToggle = () => {
       <div className="relative w-full h-full flex items-center justify-center">
         <motion.div
           initial={false}
-          animate={{
-            rotate: theme === 'dark' ? 180 : 0,
-            scale: theme === 'dark' ? 1 : 0,
-            opacity: theme === 'dark' ? 1 : 0,
-          }}
-          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          animate={{ rotate: isDark ? 180 : 0, scale: isDark ? 1 : 0, opacity: isDark ? 1 : 0 }}
+          transition={springTransition}
           className="absolute"
         >
           <Moon className="w-6 h-6 text-[#E8895C]" strokeWidth={2} />
@@ -27,20 +26,15 @@ export const ThemeToggle = () => {
 
         <motion.div
           initial={false}
-          animate={{
-            rotate: theme === 'light' ? 0 : -180,
-            scale: theme === 'light' ? 1 : 0,
-            opacity: theme === 'light' ? 1 : 0,
-          }}
-          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          animate={{ rotate: isDark ? -180 : 0, scale: isDark ? 0 : 1, opacity: isDark ? 0 : 1 }}
+          transition={springTransition}
           className="absolute"
         >
           <Sun className="w-6 h-6 text-[#D97757]" strokeWidth={2} />
         </motion.div>
       </div>
 
-      {/* Corner accent */}
       <span className="absolute top-0 right-0 w-3 h-3 bg-[#00CFC1] dark:bg-[#00F5E4] transition-all duration-300 group-hover:w-4 group-hover:h-4" />
     </button>
   );
-};
+}

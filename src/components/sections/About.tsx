@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { MapPin, Mail, Phone, Linkedin } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { AnimatedSection } from '../ui/AnimatedSection';
-import { MapPin, Mail, Phone, Linkedin } from 'lucide-react';
-import { personalInfo } from '../../data/personal';
 import { Card } from '../ui/Card';
+import { personalInfo } from '../../data/personal';
 
-export const About = () => {
+export function About(): JSX.Element {
   const { t } = useTranslation();
 
   return (
@@ -93,4 +93,4 @@ export const About = () => {
       </div>
     </Section>
   );
-};
+}

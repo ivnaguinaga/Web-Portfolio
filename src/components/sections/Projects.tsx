@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import { ExternalLink } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { AnimatedSection } from '../ui/AnimatedSection';
 import { Card } from '../ui/Card';
-import { ExternalLink } from 'lucide-react';
-import { projects } from '../../data/projects';
 import { Button } from '../ui/Button';
+import { projects } from '../../data/projects';
 
-export const Projects = () => {
+export function Projects(): JSX.Element {
   const { t } = useTranslation();
 
   return (
@@ -58,4 +58,4 @@ export const Projects = () => {
       </div>
     </Section>
   );
-};
+}

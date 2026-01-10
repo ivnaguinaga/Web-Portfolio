@@ -2,7 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { Linkedin, Mail, Phone } from 'lucide-react';
 import { personalInfo } from '../../data/personal';
 
-export const Footer = () => {
+const quickLinks = ['experience', 'education', 'projects', 'skills', 'contact'] as const;
+
+export function Footer(): JSX.Element {
   const { t } = useTranslation();
 
   return (
@@ -27,7 +29,7 @@ export const Footer = () => {
               {t('nav.about')}
             </h3>
             <div className="space-y-2">
-              {['experience', 'education', 'projects', 'skills', 'contact'].map((item) => (
+              {quickLinks.map((item) => (
                 <a
                   key={item}
                   href={`#${item}`}
@@ -87,4 +89,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+}

@@ -1,18 +1,19 @@
 import { useTranslation } from 'react-i18next';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { AnimatedSection } from '../ui/AnimatedSection';
 import { Card } from '../ui/Card';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { experiences } from '../../data/experience';
 
-export const Experience = () => {
-  const { t } = useTranslation();
+function formatDate(date: string, presentLabel: string): string {
+  if (date === 'Present') return presentLabel;
+  const [year, month] = date.split('-');
+  return `${month}/${year}`;
+}
 
-  const formatDate = (date: string) => {
-    if (date === 'Present') return t('common.present');
-    const [year, month] = date.split('-');
-    return `${month}/${year}`;
-  };
+export function Experience(): JSX.Element {
+  const { t } = useTranslation();
+  const presentLabel = t('common.present');
 
   return (
     <Section id="experience" title={t('experience.title')} subtitle={t('experience.subtitle')}>
@@ -41,7 +42,7 @@ export const Experience = () => {
                   <div className="flex items-center gap-2 text-[#6B6B6B] dark:text-[#A8A8A8]">
                     <Calendar className="w-4 h-4" strokeWidth={2} />
                     <span className="text-sm font-medium">
-                      {formatDate(exp.startDate)} - {formatDate(exp.endDate)}
+                      {formatDate(exp.startDate, presentLabel)} - {formatDate(exp.endDate, presentLabel)}
                     </span>
                   </div>
                   <div className="flex items-center gap-2 text-[#6B6B6B] dark:text-[#A8A8A8]">
@@ -69,4 +70,4 @@ export const Experience = () => {
       </div>
     </Section>
   );
-};
+}

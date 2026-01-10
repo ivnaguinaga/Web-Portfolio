@@ -4,7 +4,13 @@ import { AnimatedSection } from '../ui/AnimatedSection';
 import { Card } from '../ui/Card';
 import { skillCategories, languages } from '../../data/skills';
 
-export const Skills = () => {
+const accentColors = ['#D97757', '#00CFC1', '#E8895C'] as const;
+
+function getSkillColor(index: number): string {
+  return accentColors[index % accentColors.length];
+}
+
+export function Skills(): JSX.Element {
   const { t } = useTranslation();
 
   return (
@@ -26,12 +32,9 @@ export const Skills = () => {
                       className="px-4 py-2 text-sm font-medium bg-[#2A2A2A] dark:bg-[#F5F1E8] text-[#F5F1E8] dark:text-[#2A2A2A] clip-corner-sm relative group overflow-hidden"
                     >
                       <span className="relative z-10">{skill}</span>
-                      {/* Hover effect */}
                       <span
                         className="absolute inset-0 w-0 group-hover:w-full transition-all duration-300 clip-corner-sm"
-                        style={{
-                          backgroundColor: skillIndex % 3 === 0 ? '#D97757' : skillIndex % 3 === 1 ? '#00CFC1' : '#E8895C',
-                        }}
+                        style={{ backgroundColor: getSkillColor(skillIndex) }}
                       />
                     </span>
                   ))}
@@ -65,4 +68,4 @@ export const Skills = () => {
       </div>
     </Section>
   );
-};
+}

@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { AnimatedSection } from '../ui/AnimatedSection';
 import { Card } from '../ui/Card';
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 import { education } from '../../data/education';
 
-export const Education = () => {
+export function Education(): JSX.Element {
   const { t } = useTranslation();
 
   return (
@@ -48,4 +48,4 @@ export const Education = () => {
       </div>
     </Section>
   );
-};
+}
