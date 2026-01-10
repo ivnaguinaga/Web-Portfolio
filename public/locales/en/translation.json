@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Full Stack Web Developer",
+    "description": "Specialized in React, TypeScript, PHP, and Laravel. Passionate about creating modern and efficient web solutions.",
+    "cta_contact": "Contact Me",
+    "cta_projects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Learn more about my background and experience",
+    "description_1": "I'm a web developer with experience in frontend and backend technologies. My passion for programming began during my studies in Web Application Development, and since then I've worked on various projects that have strengthened my technical skills.",
+    "description_2": "I'm currently enrolled in the 42 Barcelona program, where I continue to expand my knowledge in programming and software development. My goal is to create efficient, scalable web applications with an excellent user experience.",
+    "contact_info": "Contact Information"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My career journey",
+    "responsibilities": {
+      "maintenance_production": "Production and pre-production environment maintenance",
+      "monitoring_grafana": "Monitoring with Grafana and restart of virtualized environments",
+      "automation_bash": "Task automation with Bash scripting",
+      "deployments_kubernetes": "Hot deployments in high availability and Kubernetes environment management",
+      "website_maintenance": "Company website maintenance",
+      "internal_apps": "Internal application development with PHP, JavaScript, and Bootstrap",
+      "database_management": "Database and user management"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of my featured work",
+    "view_live": "View Live",
+    "view_code": "View Code",
+    "project_vipfootball_desc": "Web application developed with Laravel for football league management, allowing users to check information about teams and matches. Full-stack development with REST API and Railway deployment."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I master",
+    "skills_frontend": "Frontend",
+    "skills_backend": "Backend",
+    "skills_database": "Databases",
+    "skills_devops": "DevOps & Tools",
+    "skills_methodologies": "Methodologies",
+    "languages": "Languages",
+    "lang_spanish": "Spanish",
+    "lang_catalan": "Catalan",
+    "lang_english": "English",
+    "lang_native": "Native",
+    "lang_high": "High"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's connect and build something great together",
+    "phone": "Phone",
+    "location": "Location",
+    "linkedin_profile": "View Profile",
+    "cta_message": "Feel free to reach out through any of these channels. I'm always open to discussing new projects and opportunities!"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "present": "Present"
+  }
+}

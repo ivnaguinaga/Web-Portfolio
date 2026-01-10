@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "about": "Sobre mi",
+    "experience": "Experiència",
+    "education": "Educació",
+    "projects": "Projectes",
+    "skills": "Habilitats",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "greeting": "Hola, sóc",
+    "title": "Desenvolupador Web Full Stack",
+    "description": "Especialitzat en React, TypeScript, PHP i Laravel. Apassionat per crear solucions web modernes i eficients.",
+    "cta_contact": "Contacta'm",
+    "cta_projects": "Veure Projectes"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "subtitle": "Coneix més sobre la meva trajectòria i experiència",
+    "description_1": "Sóc un desenvolupador web amb experiència en tecnologies frontend i backend. La meva passió per la programació va començar durant els meus estudis en Desenvolupament d'Aplicacions Web, i des de llavors he treballat en diversos projectes que han enfortit les meves habilitats tècniques.",
+    "description_2": "Actualment em trobo cursant el programa de 42 Barcelona, on continuo expandint els meus coneixements en programació i desenvolupament de programari. El meu objectiu és crear aplicacions web eficients, escalables i amb una excel·lent experiència d'usuari.",
+    "contact_info": "Informació de Contacte"
+  },
+  "experience": {
+    "title": "Experiència Professional",
+    "subtitle": "La meva trajectòria laboral",
+    "responsibilities": {
+      "maintenance_production": "Manteniment d'entorns de producció i preproducció",
+      "monitoring_grafana": "Monitorització amb Grafana i reinici d'entorns virtualitzats",
+      "automation_bash": "Automatització de tasques amb Bash scripting",
+      "deployments_kubernetes": "Desplegaments en calent en alta disponibilitat i gestió d'entorns en Kubernetes",
+      "website_maintenance": "Manteniment del lloc web de l'empresa",
+      "internal_apps": "Desenvolupament d'aplicacions internes amb PHP, JavaScript i Bootstrap",
+      "database_management": "Gestió de bases de dades i usuaris"
+    }
+  },
+  "education": {
+    "title": "Educació",
+    "subtitle": "La meva formació acadèmica"
+  },
+  "projects": {
+    "title": "Projectes",
+    "subtitle": "Alguns dels meus treballs destacats",
+    "view_live": "Veure Demo",
+    "view_code": "Veure Codi",
+    "project_vipfootball_desc": "Aplicació web desenvolupada amb Laravel per a la gestió de lligues de futbol, permetent als usuaris consultar informació sobre equips i partits. Desenvolupament full-stack amb API-REST i desplegament a Railway."
+  },
+  "skills": {
+    "title": "Habilitats",
+    "subtitle": "Tecnologies i eines que domino",
+    "skills_frontend": "Frontend",
+    "skills_backend": "Backend",
+    "skills_database": "Bases de Dades",
+    "skills_devops": "DevOps i Eines",
+    "skills_methodologies": "Metodologies",
+    "languages": "Idiomes",
+    "lang_spanish": "Espanyol",
+    "lang_catalan": "Català",
+    "lang_english": "Anglès",
+    "lang_native": "Natiu",
+    "lang_high": "Alt"
+  },
+  "contact": {
+    "title": "Contacte",
+    "subtitle": "Connectem i construïm alguna cosa grandiosa junts",
+    "phone": "Telèfon",
+    "location": "Ubicació",
+    "linkedin_profile": "Veure Perfil",
+    "cta_message": "No dubtis a contactar-me a través de qualsevol d'aquests canals. Sempre estic obert a discutir nous projectes i oportunitats!"
+  },
+  "footer": {
+    "rights": "Tots els drets reservats."
+  },
+  "common": {
+    "present": "Actualitat"
+  }
+}

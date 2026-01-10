@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Desarrollador Web Full Stack",
+    "description": "Especializado en React, TypeScript, PHP y Laravel. Apasionado por crear soluciones web modernas y eficientes.",
+    "cta_contact": "Contáctame",
+    "cta_projects": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Conoce más sobre mi trayectoria y experiencia",
+    "description_1": "Soy un desarrollador web con experiencia en tecnologías frontend y backend. Mi pasión por la programación comenzó durante mis estudios en Desarrollo de Aplicaciones Web, y desde entonces he trabajado en diversos proyectos que han fortalecido mis habilidades técnicas.",
+    "description_2": "Actualmente me encuentro cursando el programa de 42 Barcelona, donde continúo expandiendo mis conocimientos en programación y desarrollo de software. Mi objetivo es crear aplicaciones web eficientes, escalables y con una excelente experiencia de usuario.",
+    "contact_info": "Información de Contacto"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Mi trayectoria laboral",
+    "responsibilities": {
+      "maintenance_production": "Mantenimiento de entornos de producción y preproducción",
+      "monitoring_grafana": "Monitorización con Grafana y reinicio de entornos virtualizados",
+      "automation_bash": "Automatización de tareas con Bash scripting",
+      "deployments_kubernetes": "Despliegues en caliente en alta disponibilidad y gestión de entornos en Kubernetes",
+      "website_maintenance": "Mantenimiento del sitio web de la empresa",
+      "internal_apps": "Desarrollo de aplicaciones internas con PHP, JavaScript y Bootstrap",
+      "database_management": "Gestión de bases de datos y usuarios"
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Mi formación académica"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de mis trabajos destacados",
+    "view_live": "Ver Demo",
+    "view_code": "Ver Código",
+    "project_vipfootball_desc": "Aplicación web desarrollada con Laravel para la gestión de ligas de fútbol, permitiendo a los usuarios consultar información sobre equipos y partidos. Desarrollo full-stack con API-REST y despliegue en Railway."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas que domino",
+    "skills_frontend": "Frontend",
+    "skills_backend": "Backend",
+    "skills_database": "Bases de Datos",
+    "skills_devops": "DevOps & Herramientas",
+    "skills_methodologies": "Metodologías",
+    "languages": "Idiomas",
+    "lang_spanish": "Español",
+    "lang_catalan": "Catalán",
+    "lang_english": "Inglés",
+    "lang_native": "Nativo",
+    "lang_high": "Alto"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Conectemos y construyamos algo grandioso juntos",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "linkedin_profile": "Ver Perfil",
+    "cta_message": "No dudes en contactarme a través de cualquiera de estos canales. ¡Siempre estoy abierto a discutir nuevos proyectos y oportunidades!"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "present": "Actualidad"
+  }
+}
