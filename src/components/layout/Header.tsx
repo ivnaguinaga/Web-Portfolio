@@ -109,7 +109,7 @@ export function Header(): JSX.Element {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden border-t-2 border-[#E8E4D9] dark:border-[#3A3A3A] overflow-hidden"
+              className="lg:hidden border-t-2 border-[#E8E4D9] dark:border-[#3A3A3A] overflow-hidden bg-white/95 dark:bg-[#0A0A0A]/95 backdrop-blur-sm"
             >
               <div className="py-4 space-y-2">
                 {navItems.map((item, index) => (
