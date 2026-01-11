@@ -137,10 +137,6 @@ export function Hero(): JSX.Element {
                   <p className="text-xs text-[#6B6B6B] dark:text-[#A8A8A8] mb-1">Experience</p>
                   <p className="text-xl font-bold text-[#D97757] dark:text-[#E8895C]">2+ years</p>
                 </div>
-                <div className="px-6 py-3 bg-white dark:bg-[#1A1A1A] border-2 border-[#00CFC1] dark:border-[#00F5E4] clip-corner">
-                  <p className="text-xs text-[#6B6B6B] dark:text-[#A8A8A8] mb-1">Projects</p>
-                  <p className="text-xl font-bold text-[#00CFC1] dark:text-[#00F5E4]">10+</p>
-                </div>
               </motion.div>
 
               {/* CTA Buttons */}
